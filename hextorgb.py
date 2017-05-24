@@ -1,3 +1,34 @@
+'''
+    MIT License
+
+    Copyright (c) 2017 Andrew Pomorski
+
+    Permission is hereby granted, free of charge, to any person obtaining a copy
+    of this software and associated documentation files (the "Software"), to deal
+    in the Software without restriction, including without limitation the rights
+    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+    copies of the Software, and to permit persons to whom the Software is
+    furnished to do so, subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included in all
+    copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+    SOFTWARE.
+'''
+
+
+'''
+    This program converts 6-character hex values to RGB or RGBA codes. It only adds 1 at the end of RGBA,
+    So it's not very useful, but whatever. You can add optional parameter --rgba to output RGBA value.
+'''
+
+
 #!/usr/bin/env python
 
 import sys
@@ -11,7 +42,7 @@ args, leftovers = parser.parse_known_args()
 try:
     input_val= sys.argv[1]
 except IndexError:
-    print "Usage: phator #123123"
+    print "Usage: program_alias #123123"
     sys.exit()
 
 hex_val = input_val
