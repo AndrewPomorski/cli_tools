@@ -4,7 +4,7 @@ This is a repo for tools that I've written at work to simplify some everyday bor
 Every file has a simple description of it's functionality, so feel free to explore.
 
 
-## How to install?
+## How to use
 
 What I usually do is create a directory to store the files.
 
