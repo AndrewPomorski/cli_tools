@@ -23,6 +23,16 @@
 */
 
 /*
+ * 
+ * You're going to need express for that script: 
+ *
+ *  npm install --save express
+ *
+ * Or add it to your package.json:
+ *
+ * "express" : "*"
+ *  
+ * 
  * This server (more or less) validates email addresses. Make a GET http request to localohost on port 8080
  *
  * example request: 

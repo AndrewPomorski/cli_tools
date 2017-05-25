@@ -1,6 +1,9 @@
 # Python Commmand Line Tools.
 
-This is a repo for tools that I've written at work to simplify some everyday boring, repeatable tasks.
+This repo is called python_tools, but not **all** of them are made with Python. Some of them are written in different languages,
+That I've found are better / easier to write for the task I was trying to accomplish, so some of them might be written in Nodejs (for web stuff obviously)  / C++ / Lua etc  
+
+I've written these tools to simplify some everyday boring, repeatable tasks I do at work or with my hobby projects.
 Every file has a simple description of it's functionality, so feel free to explore.
 
 
