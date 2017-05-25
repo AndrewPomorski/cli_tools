@@ -33,7 +33,8 @@
  * "express" : "*"
  *  
  * 
- * This server (more or less) validates email addresses. Make a GET http request to localohost on port 8080
+ * This server (more or less) validates email addresses. Make a GET http request to localohost on port 8080,
+ * or other port if PORT env variable is set.
  *
  * example request: 
  * 	localhost:8080/email/john@doe.com
@@ -62,7 +63,7 @@
 
 var express = require("express");
 var app = express();
-var PORT = 8080;
+var PORT = process.env.PORT || 8080;
 
 
 app.set("json spaces", 4);
@@ -144,10 +145,3 @@ app.listen(PORT, function(err){
 	}
 	console.log("Server listening on port " + PORT);
 });
-
-
-
-
-
-
-
