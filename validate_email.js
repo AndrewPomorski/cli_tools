@@ -1,3 +1,53 @@
+/*
+    MIT License
+
+    Copyright (c) 2017 Andrew Pomorski
+
+    Permission is hereby granted, free of charge, to any person obtaining a copy
+    of this software and associated documentation files (the "Software"), to deal
+    in the Software without restriction, including without limitation the rights
+    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+    copies of the Software, and to permit persons to whom the Software is
+    furnished to do so, subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included in all
+    copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+    SOFTWARE.
+*/
+
+/*
+ * This server (more or less) validates email addresses. Make a GET http request to localohost on port 8080
+ *
+ * example request: 
+ * 	localhost:8080/email/john@doe.com
+ *
+ * example response (Invalid): 
+ *	{
+ *	  "email": "john@doe.com",
+ *	  "message": "[-] This email address appears to be invalid.",
+ *	  "valid": false
+ *	}
+ * example response (Valid): 
+ *
+ *	{
+ *	  "email": "johndoe@gmail.com",
+ *	  "message": "[+] This email address is (probably) valid.",
+ *	  "valid": true
+ *	}
+ *
+ *
+ *
+ *	If you wish to add or remove any domain names simply append or remove them from the 'domains' array. 
+ *	List of emails, courtesy of mailcheck : https://github.com/mailcheck/mailcheck/
+ */
+
 "use strict";
 
 var express = require("express");
