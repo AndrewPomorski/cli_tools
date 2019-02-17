@@ -21,7 +21,7 @@ Then simply add alias to the ~/.bashrc
 
 ```
 
-$ sudo echo "alias your_desired_name="/usr/local/bin/python_tools/script_name.py"" >> ~/.bashrc
+$ echo "alias <command_name>="/usr/local/bin/python_tools/script_name.py"" >> ~/.bashrc
 
 ``` 
 
