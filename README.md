@@ -25,4 +25,6 @@ $ echo "alias <command_name>="/usr/local/bin/python_tools/script_name.py"" >> ~/
 
 ``` 
 
+For bash scripts, I usually just copy them to ```/usr/local/bin``` since it's already in the path
+
 And that's pretty much it. Feel free to do whatever you like with the code.
