@@ -26,6 +26,6 @@
 # sudo npm install -g yamljs
 
 function gpcc() {
-	yaml2json .circleci/config.json > .circleci/config.yml
+	json2yaml .circleci/config.json > .circleci/config.yml 
 	git push origin master
 }
