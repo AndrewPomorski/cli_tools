@@ -1,4 +1,4 @@
-# Commmand Line Utility Tools.
+# Command Line Utility Tools.
 
 This is a collection of scripts and tools I wrote over time out of boredom, laziness or to try and simplify some everyday boring, repeatable tasks I do at work or with my hobby projects.
 Every file has a simple description of it's functionality and usage, so feel free to explore.
