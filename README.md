@@ -1,10 +1,7 @@
-# Python Commmand Line Tools.
+# Commmand Line Utility Tools.
 
-This repo is called python_tools, but not **all** of them are made with Python. Some of them are written in different languages,
-That I've found are better / easier to write for the task I was trying to accomplish, so some of them might be written in Nodejs (for web stuff obviously)  / C++ / Lua etc  
-
-I've written these tools to simplify some everyday boring, repeatable tasks I do at work or with my hobby projects.
-Every file has a simple description of it's functionality, so feel free to explore.
+This is a collection of scripts and tools I wrote over time out of boredom, laziness or to try and simplify some everyday boring, repeatable tasks I do at work or with my hobby projects.
+Every file has a simple description of it's functionality and usage, so feel free to explore.
 
 
 ## How to use
@@ -25,7 +22,7 @@ $ echo "alias <command_name>="/usr/local/bin/python_tools/script_name.py"" >> ~/
 
 ``` 
 
-For bash scripts, I usually just copy them to ```/usr/local/bin``` since it's already in $PATH
+For bash scripts, I just copy them to ```/usr/local/bin``` since it's already in $PATH
 
 
 And that's pretty much it. Feel free to do whatever you like with the code.
