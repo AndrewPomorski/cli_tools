@@ -21,9 +21,18 @@
 #    SOFTWARE.
 
 
-# git push circle ci
+# git push CircleCI
 # Requires yamljs (https://www.npmjs.com/package/yamljs)
 # sudo npm install -g yamljs
+
+if [ ! -f "/usr/local/bin/json2yaml" ]; then 
+		echo "No json2yaml found. \n Running: sudo npm install -g yamljs"
+		sudo npm install -g yamljs
+fi	 
+
+if [ -d ".circleci" ]; then
+		gpcc		
+fi
 
 function gpcc() {
 	json2yaml .circleci/config.json > .circleci/config.yml 
